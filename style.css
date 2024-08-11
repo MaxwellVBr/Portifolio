@@ -1,0 +1,153 @@
+/*.nav_header, .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.header {
+    background-color: rgb(92, 18, 8);
+    box-shadow: 1px 1px 4px var(--color-dark4);
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 3.5em;
+}
+.nav_header a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+.active {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container_perfil {
+    text-align: center;
+    padding-top: 5em;
+}
+
+.btn_header {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 768px){
+    .btn_header{
+        display: block;
+        
+    }
+    .nav_header {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: black;
+        height: 100%;
+        width: 25%;
+        padding: 15px;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+}
+
+@keyframes showSidear {
+    from {margin-left: -100vw;}
+    top {margin-left: -10vw;}
+    
+}*/
+
+img {
+    border-radius: 50px 50px 50px 50px;
+    width: 100px;
+    height: 100px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+body {
+    background-color: rgb(25, 17, 82);
+    font-family: Trebuchet MS;
+    color: white;
+    text-align: center;
+}
+
+b {
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    text-align: center;
+    margin: 10px;
+
+}
+
+/* Navegação do Header*/
+.nav {
+    background-color: rgba(3, 3, 43, 0.884);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_Nav,
+.container_Portifolio {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 20px 0 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+}
+
+.active:hover {
+    background-color: rgba(157, 157, 158, 0.151);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+/* Corpo */
+.container_Bio {
+    border: solid rgb(184, 48, 161);
+}
+
+.container_Projetos {
+    border: solid yellow;
+}
+
+/* Rodapé */
+
+.container_Contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 20px 0;
+    border: solid red;
+}
+
+#btn_Enviar {
+    margin: 10px;
+    background-color: brown;
+    border-radius: 10px;
+
+}
+
+#btn_Enviar:hover {
+    transition: 0.8s;
+    opacity: 0.1;
+
+}
