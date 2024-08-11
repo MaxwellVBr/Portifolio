@@ -90,12 +90,21 @@ b {
 
 }
 
+body{
+    margin: 0;
+}
+
+#container_main {
+    
+}
+
 /* Navegação do Header*/
 .nav {
     background-color: rgba(3, 3, 43, 0.884);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 50px;
 }
 
 .container_Nav,
@@ -121,8 +130,32 @@ b {
 }
 
 /* Corpo */
-.container_Bio {
-    border: solid rgb(184, 48, 161);
+
+#container_Perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#container_Bio, #container_foto {
+    align-content: center;
+    justify-content: center;
+}
+
+#container_Bio {
+    width: 40%;
+    margin: 10px;
+}
+
+#container_foto{
+    width: 60%;
+    
+}
+
+#container_foto img{
+    height: 60%;
+    width: 40%;
+    margin: 0;
+    padding: 0;
 }
 
 .container_Projetos {
@@ -150,4 +183,51 @@ b {
     transition: 0.8s;
     opacity: 0.1;
 
+}
+
+/* footer */
+
+#container_Redesocial {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+#container_Redesocial a {
+    text-decoration: none;
+    color: white;
+}
+
+#github {
+    background-color: black;
+    padding: 5px;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+}
+
+#linkedin {
+    background-color: rgb(9, 9, 150);
+    padding: 5px;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+}
+
+#whatsapp {
+    background-color: rgb(40, 138, 45);
+    padding: 5px;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+}
+
+#instagram {
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf) ;
+    padding: 5px;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
 }
